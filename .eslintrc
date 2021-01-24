@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["standard", "standard-preact"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "ecmaVersion": 6
+    }
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-return-assign": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "React" }]
+  }
+}
