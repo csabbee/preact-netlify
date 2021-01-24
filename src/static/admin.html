@@ -33,8 +33,24 @@
         );
       }
     });
+    const MediumPreview = createClass({
+      render: function() {
+        const { entry, widgetFor } = this.props;
+
+        return (
+          html`
+            <div>
+              <h1 className='medium-title'>${entry.getIn(['data', 'title'])}</h1>
+              <caption className='blogSubTitle'>${entry.getIn(['data', 'tag'])}</caption>
+              <iframe src='${entry.getIn(['data', 'postUrl'])}'></iframe>
+            </div>
+          `
+        );
+      }
+    })
     CMS.registerPreviewStyle("/preview.css");
     CMS.registerPreviewTemplate("pages", PostPreview);
+    CMS.registerPreviewTemplate("medium", MediumPreview);
   </script>
 </body>
 </html>

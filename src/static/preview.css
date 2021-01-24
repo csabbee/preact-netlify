@@ -22,10 +22,14 @@ a {
   line-height: 1;
 }
 
-.blogSubTitle{
+.blogSubTitle {
   color: #aaa;
   display: block;
   text-align: left;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.medium-title {
+
 }
